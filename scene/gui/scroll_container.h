@@ -30,9 +30,8 @@
 
 #pragma once
 
-#include "container.h"
-
-#include "scroll_bar.h"
+#include "scene/gui/container.h"
+#include "scene/gui/scroll_bar.h"
 
 class PanelContainer;
 class TextureRect;
@@ -97,6 +96,9 @@ private:
 
 		Ref<Texture2D> scroll_hint_vertical;
 		Ref<Texture2D> scroll_hint_horizontal;
+
+		Color scroll_hint_vertical_color;
+		Color scroll_hint_horizontal_color;
 
 		int scrollbar_h_separation = 0;
 		int scrollbar_v_separation = 0;
